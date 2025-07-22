@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Imóveis - Corretor de Imóveis</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-home"></i>
+                    <span>Elite<span class="gold">Imóveis</span></span>
+                </div>
+                
+                <nav class="nav-desktop">
+                    <a href="#inicio">Início</a>
+                    <a href="#sobre">Sobre</a>
+                    <a href="#servicos">Serviços</a>
+                    <a href="#equipe">Equipe</a>
+                    <a href="#parceiros">Parceiros</a>
+                    <a href="#contato">Contato</a>
+                </nav>
+                
+                <button class="cta-button">Fale Conosco</button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            
+            <nav class="nav-mobile" id="mobileNav">
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#equipe">Equipe</a>
+                <a href="#parceiros">Parceiros</a>
+                <a href="#contato">Contato</a>
+                <button class="cta-button">Fale Conosco</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    #1 Corretor de Imóveis da Região
+                </div>
+                
+                <h1 class="hero-title">
+                    Encontre o<span class="gold block">Imóvel Perfeito</span>
+                    para Você
+                </h1>
+                
+                <p class="hero-description">
+                    Com mais de 15 anos de experiência no mercado imobiliário, oferecemos as melhores oportunidades de compra,
+                    venda e locação de imóveis.
+                </p>
+                
+                <div class="hero-buttons">
+                    <button class="btn-primary">
+                        Ver Imóveis Disponíveis
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="btn-secondary">
+                        Agendar Consulta
+                    </button>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">
+                            <i class="fas fa-star"></i>
+                            <span>500+</span>
+                        </div>
+                        <p>Imóveis Vendidos</p>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">
+                            <i class="fas fa-users"></i>
+                            <span>1000+</span>
+                        </div>
+                        <p>Clientes Satisfeitos</p>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">
+                            <i class="fas fa-building"></i>
+                            <span>15+</span>
+                        </div>
+                        <p>Anos de Experiência</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <span class="section-label">Sobre Nós</span>
+                    <h2 class="section-title">
+                        Sua Confiança é Nossa
+                        <span class="gold">Prioridade</span>
+                    </h2>
+                    
+                    <p class="about-text">
+                        Somos uma empresa especializada em consultoria imobiliária, com foco em proporcionar as melhores
+                        experiências para nossos clientes. Nossa missão é conectar pessoas aos seus sonhos através do imóvel
+                        ideal.
+                    </p>
+                    
+                    <p class="about-text">
+                        Com uma equipe altamente qualificada e tecnologia de ponta, garantimos transparência, agilidade e
+                        segurança em todas as transações.
+                    </p>
+                    
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-award"></i>
+                            <div>
+                                <h4>Premiados</h4>
+                                <p>Melhor Imobiliária 2023</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <h4>Segurança</h4>
+                                <p>100% Garantida</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-heart"></i>
+                            <div>
+                                <h4>Atendimento</h4>
+                                <p>Personalizado</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-chart-line"></i>
+                            <div>
+                                <h4>Resultados</h4>
+                                <p>Comprovados</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="btn-dark">Conheça Nossa História</button>
+                </div>
+                
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <img src="/placeholder.svg?height=400&width=500" alt="Sobre a empresa">
+                    </div>
+                    <div class="experience-badge">
+                        <h3>15+</h3>
+                        <p>Anos no Mercado</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicos" class="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Nossos Serviços</span>
+                <h2 class="section-title">
+                    Soluções Completas em
+                    <span class="gold">Imóveis</span>
+                </h2>
+                <p class="section-description">
+                    Oferecemos uma gama completa de serviços imobiliários para atender todas as suas necessidades com excelência
+                    e profissionalismo.
+                </p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Compra de Imóveis</h3>
+                    <p>Encontramos o imóvel perfeito para você com as melhores condições do mercado.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-key"></i>
+                    </div>
+                    <h3>Venda de Imóveis</h3>
+                    <p>Vendemos seu imóvel pelo melhor preço com estratégias personalizadas.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Avaliação Gratuita</h3>
+                    <p>Avaliamos seu imóvel gratuitamente com base no mercado atual.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Documentação</h3>
+                    <p>Cuidamos de toda documentação necessária para sua transação.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Consultoria</h3>
+                    <p>Oferecemos consultoria especializada para investimentos imobiliários.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Locação</h3>
+                    <p>Administramos locações com total segurança para proprietários e inquilinos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="equipe" class="team">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Nossa Equipe</span>
+                <h2 class="section-title">
+                    Profissionais
+                    <span class="gold">Especializados</span>
+                </h2>
+                <p class="section-description">
+                    Conheça nossa equipe de corretores experientes, prontos para ajudar você a encontrar o imóvel dos seus
+                    sonhos.
+                </p>
+            </div>
+            
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="/placeholder.svg?height=300&width=300" alt="Carlos Silva">
+                        <div class="team-overlay">
+                            <div class="team-social">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="mailto:carlos@eliteimoveis.com"><i class="fas fa-envelope"></i></a>
+                                <a href="tel:(11)99999-9999"><i class="fas fa-phone"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Carlos Silva</h3>
+                        <p class="team-role">Diretor Geral</p>
+                        <p class="team-description">Especialista em mercado imobiliário com mais de 20 anos de experiência.</p>
+                    </div>
+                </div>
+                
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="/placeholder.svg?height=300&width=300" alt="Ana Santos">
+                        <div class="team-overlay">
+                            <div class="team-social">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="mailto:ana@eliteimoveis.com"><i class="fas fa-envelope"></i></a>
+                                <a href="tel:(11)88888-8888"><i class="fas fa-phone"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Ana Santos</h3>
+                        <p class="team-role">Corretora Senior</p>
+                        <p class="team-description">Especializada em imóveis residenciais de alto padrão.</p>
+                    </div>
+                </div>
+                
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="/placeholder.svg?height=300&width=300" alt="Roberto Lima">
+                        <div class="team-overlay">
+                            <div class="team-social">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="mailto:roberto@eliteimoveis.com"><i class="fas fa-envelope"></i></a>
+                                <a href="tel:(11)77777-7777"><i class="fas fa-phone"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Roberto Lima</h3>
+                        <p class="team-role">Corretor Comercial</p>
+                        <p class="team-description">Focado em imóveis comerciais e investimentos corporativos.</p>
+                    </div>
+                </div>
+                
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="/placeholder.svg?height=300&width=300" alt="Marina Costa">
+                        <div class="team-overlay">
+                            <div class="team-social">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="mailto:marina@eliteimoveis.com"><i class="fas fa-envelope"></i></a>
+                                <a href="tel:(11)66666-6666"><i class="fas fa-phone"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Marina Costa</h3>
+                        <p class="team-role">Consultora de Locação</p>
+                        <p class="team-description">Especialista em locações residenciais e comerciais.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section id="parceiros" class="partners">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Nossos Parceiros</span>
+                <h2 class="section-title">
+                    Rede de
+                    <span class="gold">Confiança</span>
+                </h2>
+                <p class="section-description">
+                    Trabalhamos com os melhores parceiros do mercado para oferecer soluções completas e integradas para nossos
+                    clientes.
+                </p>
+            </div>
+            
+            <div class="partners-grid">
+                <div class="partner-card">
+                    <img src="/placeholder.svg?height=100&width=200" alt="Imobiliária Premium">
+                    <h3>Imobiliária Premium</h3>
+                    <p>Parceria estratégica em imóveis de luxo</p>
+                </div>
+                
+                <div class="partner-card">
+                    <img src="/placeholder.svg?height=100&width=200" alt="Construtora Elite">
+                    <h3>Construtora Elite</h3>
+                    <p>Lançamentos exclusivos e empreendimentos</p>
+                </div>
+                
+                <div class="partner-card">
+                    <img src="/placeholder.svg?height=100&width=200" alt="Banco Financeiro">
+                    <h3>Banco Financeiro</h3>
+                    <p>Melhores condições de financiamento</p>
+                </div>
+                
+                <div class="partner-card">
+                    <img src="/placeholder.svg?height=100&width=200" alt="Seguradora Confiança">
+                    <h3>Seguradora Confiança</h3>
+                    <p>Seguros residenciais e comerciais</p>
+                </div>
+                
+                <div class="partner-card">
+                    <img src="/placeholder.svg?height=100&width=200" alt="Advocacia Jurídica">
+                    <h3>Advocacia Jurídica</h3>
+                    <p>Assessoria jurídica especializada</p>
+                </div>
+                
+                <div class="partner-card">
+                    <img src="/placeholder.svg?height=100&width=200" alt="Avaliações Técnicas">
+                    <h3>Avaliações Técnicas</h3>
+                    <p>Laudos e avaliações profissionais</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Depoimentos</span>
+                <h2 class="section-title">
+                    O que Nossos
+                    <span class="gold">Clientes Dizem</span>
+                </h2>
+                <p class="section-description">
+                    A satisfação dos nossos clientes é nossa maior conquista. Veja o que eles têm a dizer sobre nossos serviços.
+                </p>
+            </div>
+            
+            <div class="testimonials-container">
+                <div class="testimonial-card active" data-testimonial="0">
+                    <i class="fas fa-quote-left"></i>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Excelente atendimento! Encontrei minha casa dos sonhos em apenas 2 semanas. A equipe foi muito profissional e atenciosa durante todo o processo."
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="/placeholder.svg?height=100&width=100" alt="João Pereira">
+                        <div>
+                            <h4>João Pereira</h4>
+                            <p>Empresário</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-navigation">
+                    <button class="nav-btn prev" id="prevTestimonial">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="testimonial-dots">
+                        <span class="dot active" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                        <span class="dot" data-slide="2"></span>
+                        <span class="dot" data-slide="3"></span>
+                    </div>
+                    <button class="nav-btn next" id="nextTestimonial">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Entre em Contato</span>
+                <h2 class="section-title">
+                    Vamos Conversar Sobre Seu
+                    <span class="gold">Próximo Imóvel</span>
+                </h2>
+                <p class="section-description">
+                    Estamos prontos para ajudar você a encontrar o imóvel perfeito. Entre em contato conosco e agende uma
+                    consulta gratuita.
+                </p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Endereço</h3>
+                        <p>
+                            Av. Paulista, 1000 - Sala 1501<br>
+                            Bela Vista, São Paulo - SP<br>
+                            CEP: 01310-100
+                        </p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <i class="fas fa-phone"></i>
+                        <h3>Telefones</h3>
+                        <p>
+                            (11) 3000-0000<br>
+                            (11) 99999-9999
+                        </p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>E-mail</h3>
+                        <p>
+                            contato@eliteimoveis.com<br>
+                            vendas@eliteimoveis.com
+                        </p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <i class="fas fa-clock"></i>
+                        <h3>Horário</h3>
+                        <p>
+                            Segunda a Sexta: 8h às 18h<br>
+                            Sábado: 8h às 14h<br>
+                            Domingo: Fechado
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nome Completo *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Telefone *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Assunto</label>
+                                <input type="text" id="subject" name="subject">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Mensagem *</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary full-width">
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-home"></i>
+                        <span>Elite<span class="gold">Imóveis</span></span>
+                    </div>
+                    <p>
+                        Sua parceira de confiança no mercado imobiliário. Conectamos pessoas aos seus sonhos através do imóvel
+                        ideal.
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#sobre">Sobre Nós</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#equipe">Equipe</a></li>
+                        <li><a href="#parceiros">Parceiros</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Serviços</h3>
+                    <ul>
+                        <li><a href="#">Compra de Imóveis</a></li>
+                        <li><a href="#">Venda de Imóveis</a></li>
+                        <li><a href="#">Locação</a></li>
+                        <li><a href="#">Avaliação Gratuita</a></li>
+                        <li><a href="#">Consultoria</a></li>
+                        <li><a href="#">Documentação</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <p>Av. Paulista, 1000 - Sala 1501</p>
+                            <p>Bela Vista, São Paulo - SP</p>
+                            <p>CEP: 01310-100</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <p>(11) 3000-0000</p>
+                            <p>(11) 99999-9999</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>contato@eliteimoveis.com</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Elite Imóveis. Todos os direitos reservados.</p>
+                <div class="footer-links">
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                    <a href="#">LGPD</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
