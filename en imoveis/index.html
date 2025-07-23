@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moraes Imobiliária - Moraes Consultoria Imobiliária</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <noscript>
+        <div class="noscript-message">
+            <p>Habilite o javascript de seu navegador.</p>
+        </div>
+    </noscript>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1><a href="index.html">E|S - Enilton Silva  Imobiliária</a></h1>
+                </div>
+                <div class="contact-info">
+                    <p>Contato WhatsApp</p>
+                    <div class="phone-numbers">
+                        <span>(14) 3321-7000</span>
+                        <span>(14) 99105-6611</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navigation">
+        <div class="container">
+            <ul class="nav-tabs">
+                <li><a href="#tab-0" class="nav-link active">Comprar</a></li>
+                <li><a href="#tab-1" class="nav-link">Alugar</a></li>
+                <li><a href="#tab-2" class="nav-link">Novos</a></li>
+                <li><a href="#tab-3" class="nav-link">Casa em Condomínio</a></li>
+                <li><a href="#tab-4" class="nav-link">Tour Virtual</a></li>
+                <li><a href="#tab-5" class="nav-link">Código</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="container">
+            <form class="search-form" id="search-form">
+                <div class="search-row">
+                    <div class="search-field">
+                        <label for="property-type">Buscar por tipo</label>
+                        <select id="property-type" name="property-type">
+                            <option value="">Tipo</option>
+                            <option value="apartamento">Apartamento</option>
+                            <option value="casa">Casa</option>
+                            <option value="terreno">Terreno</option>
+                            <option value="comercial">Comercial</option>
+                        </select>
+                    </div>
+                    <div class="search-field">
+                        <input type="text" id="location-input" name="location" placeholder="Digite região, prédio, bairro ou cidade">
+                    </div>
+                    <button type="submit" class="search-btn">Buscar</button>
+                </div>
+                <div class="error-message" id="search-error" style="display: none;">
+                    Por favor, digite uma localização para buscar.
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Featured Properties for Rent -->
+            <section class="property-section">
+                <h2>Imóveis em Destaque para Locação</h2>
+                <div class="property-grid">
+                    <div class="property-card">
+                        <div class="property-image">Imagem do imóvel</div>
+                        <div class="property-info">
+                            <h3>Apartamento para Locação</h3>
+                            <p>Excelente localização no centro da cidade</p>
+                            <span class="property-price">R$ 1.500/mês</span>
+                        </div>
+                    </div>
+                    <div class="property-card">
+                        <div class="property-image">Imagem do imóvel</div>
+                        <div class="property-info">
+                            <h3>Casa em Condomínio</h3>
+                            <p>3 quartos, 2 banheiros, área gourmet</p>
+                            <span class="property-price">R$ 2.200/mês</span>
+                        </div>
+                    </div>
+                    <div class="property-card">
+                        <div class="property-image">Imagem do imóvel</div>
+                        <div class="property-info">
+                            <h3>Apartamento Moderno</h3>
+                            <p>2 quartos, sacada, garagem</p>
+                            <span class="property-price">R$ 1.800/mês</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Featured Properties for Sale -->
+            <section class="property-section">
+                <h2>Imóveis em Destaque para Venda</h2>
+                <div class="property-grid">
+                    <div class="property-card">
+                        <div class="property-image">Imagem do imóvel</div>
+                        <div class="property-info">
+                            <h3>Casa Residencial</h3>
+                            <p>4 quartos, piscina, churrasqueira</p>
+                            <span class="property-price">R$ 450.000</span>
+                        </div>
+                    </div>
+                    <div class="property-card">
+                        <div class="property-image">Imagem do imóvel</div>
+                        <div class="property-info">
+                            <h3>Apartamento Novo</h3>
+                            <p>3 quartos, suíte, varanda gourmet</p>
+                            <span class="property-price">R$ 320.000</span>
+                        </div>
+                    </div>
+                    <div class="property-card">
+                        <div class="property-image">Imagem do imóvel</div>
+                        <div class="property-info">
+                            <h3>Terreno Comercial</h3>
+                            <p>Excelente para investimento</p>
+                            <span class="property-price">R$ 180.000</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Business Opportunities -->
+            <section class="property-section">
+                <h2>Oportunidades de Negócio</h2>
+                <div class="property-grid">
+                    <div class="property-card">
+                        <div class="property-image">Imagem do imóvel</div>
+                        <div class="property-info">
+                            <h3>Ponto Comercial</h3>
+                            <p>Centro comercial movimentado</p>
+                            <span class="property-price">R$ 280.000</span>
+                        </div>
+                    </div>
+                    <div class="property-card">
+                        <div class="property-image">Imagem do imóvel</div>
+                        <div class="property-info">
+                            <h3>Galpão Industrial</h3>
+                            <p>Área de 500m², ótima localização</p>
+                            <span class="property-price">R$ 650.000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="see-more">
+                    <a href="#" class="see-more-link">Veja mais</a>
+                </div>
+            </section>
+
+            <!-- Featured Launches -->
+            <section class="property-section">
+                <h2>Lançamentos em destaque</h2>
+                <div class="carousel-container">
+                    <div class="carousel" id="launches-carousel">
+                        <div class="carousel-item active">
+                            <div class="property-card">
+                                <div class="property-image">Imagem do imóvel</div>
+                                <div class="property-info">
+                                    <h3>Residencial Jardim das Flores</h3>
+                                    <p>Apartamentos de 2 e 3 quartos</p>
+                                    <span class="property-price">A partir de R$ 280.000</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="property-card">
+                                <div class="property-image">Imagem do imóvel</div>
+                                <div class="property-info">
+                                    <h3>Condomínio Vila Bela</h3>
+                                    <p>Casas em condomínio fechado</p>
+                                    <span class="property-price">A partir de R$ 420.000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-controls">
+                        <button class="carousel-btn prev" id="carousel-prev">‹</button>
+                        <button class="carousel-btn next" id="carousel-next">›</button>
+                    </div>
+                </div>
+                <div class="see-more">
+                    <a href="#" class="see-more-link">Veja mais</a>
+                </div>
+            </section>
+
+            <!-- CTA Sections -->
+            <section class="cta-sections">
+                <div class="cta-grid">
+                    <div class="cta-card">
+                        <h3>Imóvel sob encomenda</h3>
+                        <p>Descreva o imóvel que você procura e nós avisaremos quando encontrá-lo.</p>
+                        <a href="encomende-seu-imovel.html" class="cta-btn">Encomende seu imóvel</a>
+                    </div>
+                    <div class="cta-card">
+                        <h3>Financiamento</h3>
+                        <p>As melhores ofertas de crédito para você financiar seu imóvel.</p>
+                        <a href="financiamento-e-bancos.html" class="cta-btn">Faça uma simulação</a>
+                    </div>
+                    <div class="cta-card">
+                        <h3>Cadastre seu imóvel</h3>
+                        <p>Anuncie conosco! Nós encontraremos o melhor negócio para você.</p>
+                        <a href="cadastre-seu-imovel.html" class="cta-btn">Cadastre seu imóvel</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Unidade Jardim Infante Dom Henrique</h4>
+                    <p>Rua Alberto Segalla, 1162 - Jardim Infante Dom Henrique - Bauru/SP</p>
+                    <div class="contact-info">
+                        <span>(14) 3321-7000</span>
+                        <span>(14) 99105-6611</span>
+                        <span>(14) 98122-7777</span>
+                        <span>(14) 99772-3030</span>
+                    </div>
+                    <p>Horário de funcionamento:</p>
+                    <p>De segunda a sexta-feira das 08h às 20h</p>
+                    <p>Sábado das 09h às 18h</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie Notice -->
+    <div class="cookie-notice" id="cookie-notice">
+        <div class="cookie-content">
+            <p>Usamos cookies para personalizar conteúdos e melhorar sua experiência. Ao navegar nesse site, você concorda com a nossa <a href="/politica-de-cookies">Política de Cookies</a></p>
+            <button class="cookie-btn" id="dismiss-cookie">Entendi</button>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

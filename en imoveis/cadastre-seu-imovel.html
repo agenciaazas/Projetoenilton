@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre seu imóvel - Moraes Imobiliária</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1><a href="index.html">Moraes Imobiliária - Moraes Consultoria Imobiliária</a></h1>
+                </div>
+                <div class="contact-info">
+                    <p>Contato WhatsApp</p>
+                    <div class="phone-numbers">
+                        <span>(14) 3321-7000</span>
+                        <span>(14) 99105-6611</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="page-header">
+                <h1>Cadastre seu imóvel</h1>
+                <p>Anuncie conosco! Nós encontraremos o melhor negócio para você.</p>
+            </div>
+
+            <div class="benefits-section">
+                <h2>Por que escolher a Moraes Imobiliária?</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <h3>Experiência no Mercado</h3>
+                        <p>Mais de 20 anos de experiência no mercado imobiliário de Bauru e região.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>Marketing Completo</h3>
+                        <p>Divulgação em múltiplos canais: site, redes sociais, portais imobiliários.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>Atendimento Personalizado</h3>
+                        <p>Acompanhamento dedicado desde o cadastro até a conclusão do negócio.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>Avaliação Gratuita</h3>
+                        <p>Avaliação profissional do seu imóvel sem custo adicional.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-container">
+                <h2>Cadastre seu imóvel</h2>
+                <form class="property-form" id="property-form">
+                    <div class="form-section">
+                        <h3>Dados do Proprietário</h3>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="nome-proprietario">Nome completo *</label>
+                                <input type="text" id="nome-proprietario" name="nome-proprietario" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="cpf">CPF *</label>
+                                <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email-proprietario">E-mail *</label>
+                                <input type="email" id="email-proprietario" name="email-proprietario" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="telefone-proprietario">Telefone *</label>
+                                <input type="tel" id="telefone-proprietario" name="telefone-proprietario" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>Dados do Imóvel</h3>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="tipo-imovel-cadastro">Tipo de imóvel *</label>
+                                <select id="tipo-imovel-cadastro" name="tipo-imovel-cadastro" required>
+                                    <option value="">Selecione o tipo</option>
+                                    <option value="apartamento">Apartamento</option>
+                                    <option value="casa">Casa</option>
+                                    <option value="terreno">Terreno</option>
+                                    <option value="comercial">Comercial</option>
+                                    <option value="rural">Rural</option>
+                                    <option value="sobrado">Sobrado</option>
+                                    <option value="chacara">Chácara</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="finalidade-cadastro">Finalidade *</label>
+                                <select id="finalidade-cadastro" name="finalidade-cadastro" required>
+                                    <option value="">Selecione a finalidade</option>
+                                    <option value="venda">Venda</option>
+                                    <option value="locacao">Locação</option>
+                                    <option value="ambos">Venda e Locação</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="valor-venda">Valor de venda</label>
+                                <input type="text" id="valor-venda" name="valor-venda" placeholder="R$ 300.000">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="valor-locacao">Valor de locação</label>
+                                <input type="text" id="valor-locacao" name="valor-locacao" placeholder="R$ 1.500">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="quartos">Número de quartos</label>
+                                <select id="quartos" name="quartos">
+                                    <option value="">Selecione</option>
+                                    <option value="1">1 quarto</option>
+                                    <option value="2">2 quartos</option>
+                                    <option value="3">3 quartos</option>
+                                    <option value="4">4 quartos</option>
+                                    <option value="5+">5 ou mais quartos</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="banheiros">Número de banheiros</label>
+                                <select id="banheiros" name="banheiros">
+                                    <option value="">Selecione</option>
+                                    <option value="1">1 banheiro</option>
+                                    <option value="2">2 banheiros</option>
+                                    <option value="3">3 banheiros</option>
+                                    <option value="4+">4 ou mais banheiros</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="area-total">Área total (m²)</label>
+                                <input type="number" id="area-total" name="area-total" placeholder="120">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="area-construida">Área construída (m²)</label>
+                                <input type="number" id="area-construida" name="area-construida" placeholder="80">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>Localização</h3>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="endereco">Endereço completo *</label>
+                                <input type="text" id="endereco" name="endereco" placeholder="Rua, número" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="bairro">Bairro *</label>
+                                <input type="text" id="bairro" name="bairro" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="cidade">Cidade *</label>
+                                <input type="text" id="cidade" name="cidade" value="Bauru" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="cep">CEP</label>
+                                <input type="text" id="cep" name="cep" placeholder="17000-000">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="observacoes">Observações adicionais</label>
+                        <textarea id="observacoes" name="observacoes" rows="4" placeholder="Descreva características especiais, diferenciais do imóvel, estado de conservação, etc."></textarea>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="cta-btn">Cadastrar imóvel</button>
+                        <a href="index.html" class="back-link">Voltar ao início</a>
+                    </div>
+                </form>
+            </div>
+
+            <div class="contact-section">
+                <h2>Precisa de ajuda?</h2>
+                <p>Nossa equipe está pronta para ajudá-lo no cadastro do seu imóvel.</p>
+                <div class="contact-options">
+                    <div class="contact-option">
+                        <h4>Telefone</h4>
+                        <p>(14) 3321-7000</p>
+                    </div>
+                    <div class="contact-option">
+                        <h4>WhatsApp</h4>
+                        <p>(14) 99105-6611</p>
+                    </div>
+                    <div class="contact-option">
+                        <h4>E-mail</h4>
+                        <p>contato@moraesimobiliaria.com.br</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Unidade Jardim Infante Dom Henrique</h4>
+                    <p>Rua Alberto Segalla, 1162 - Jardim Infante Dom Henrique - Bauru/SP</p>
+                    <div class="contact-info">
+                        <span>(14) 3321-7000</span>
+                        <span>(14) 99105-6611</span>
+                        <span>(14) 98122-7777</span>
+                        <span>(14) 99772-3030</span>
+                    </div>
+                    <p>Horário de funcionamento:</p>
+                    <p>De segunda a sexta-feira das 08h às 20h</p>
+                    <p>Sábado das 09h às 18h</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

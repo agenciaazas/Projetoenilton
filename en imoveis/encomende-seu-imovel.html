@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encomende seu imóvel - Moraes Imobiliária</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1><a href="index.html">Moraes Imobiliária - Moraes Consultoria Imobiliária</a></h1>
+                </div>
+                <div class="contact-info">
+                    <p>Contato WhatsApp</p>
+                    <div class="phone-numbers">
+                        <span>(14) 3321-7000</span>
+                        <span>(14) 99105-6611</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="page-header">
+                <h1>Encomende seu imóvel</h1>
+                <p>Descreva o imóvel que você procura e nós avisaremos quando encontrá-lo.</p>
+            </div>
+
+            <div class="form-container">
+                <form class="contact-form" id="encomenda-form">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="nome">Nome completo *</label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">E-mail *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="telefone">Telefone *</label>
+                            <input type="tel" id="telefone" name="telefone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="tipo-imovel">Tipo de imóvel</label>
+                            <select id="tipo-imovel" name="tipo-imovel">
+                                <option value="">Selecione o tipo</option>
+                                <option value="apartamento">Apartamento</option>
+                                <option value="casa">Casa</option>
+                                <option value="terreno">Terreno</option>
+                                <option value="comercial">Comercial</option>
+                                <option value="rural">Rural</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="finalidade">Finalidade</label>
+                            <select id="finalidade" name="finalidade">
+                                <option value="">Selecione a finalidade</option>
+                                <option value="comprar">Comprar</option>
+                                <option value="alugar">Alugar</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="orcamento">Orçamento</label>
+                            <input type="text" id="orcamento" name="orcamento" placeholder="Ex: R$ 300.000">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <label for="descricao">Descrição detalhada do imóvel desejado *</label>
+                        <textarea id="descricao" name="descricao" rows="6" placeholder="Descreva características como número de quartos, localização preferida, área mínima, etc." required></textarea>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="cta-btn">Enviar solicitação</button>
+                        <a href="index.html" class="back-link">Voltar ao início</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Unidade Jardim Infante Dom Henrique</h4>
+                    <p>Rua Alberto Segalla, 1162 - Jardim Infante Dom Henrique - Bauru/SP</p>
+                    <div class="contact-info">
+                        <span>(14) 3321-7000</span>
+                        <span>(14) 99105-6611</span>
+                        <span>(14) 98122-7777</span>
+                        <span>(14) 99772-3030</span>
+                    </div>
+                    <p>Horário de funcionamento:</p>
+                    <p>De segunda a sexta-feira das 08h às 20h</p>
+                    <p>Sábado das 09h às 18h</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
