@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imóveis para Alugar - Moraes Imobiliária</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1><a href="index.html">Moraes Imobiliária</a></h1>
+                </div>
+                <nav class="navigation">
+                    <ul class="nav-tabs">
+                        <li><a href="index.html" class="nav-link">Início</a></li>
+                        <li><a href="alugar.html" class="nav-link active">Alugar</a></li>
+                        <li><a href="vender.html" class="nav-link">Vender</a></li>
+                        <li><a href="contato.html" class="nav-link">Contato</a></li>
+                    </ul>
+                </nav>
+                <div class="contact-info">
+                    <p>Contato WhatsApp</p>
+                    <div class="phone-numbers">
+                        <span>(14) 3321-7000</span>
+                        <span>(14) 99105-6611</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Search and Filter Section -->
+    <section class="search-section">
+        <div class="container">
+            <form class="search-form">
+                <div class="search-row">
+                    <div class="search-field">
+                        <label for="localizacao">Localização</label>
+                        <input type="text" id="localizacao" name="localizacao" placeholder="Digite região, prédio, bairro">
+                    </div>
+                    <div class="search-field">
+                        <label for="valor-min">Preço de locação (R$)</label>
+                        <input type="number" id="valor-min" name="valor-min" placeholder="Mínimo">
+                        <input type="number" id="valor-max" name="valor-max" placeholder="Máximo">
+                    </div>
+                    <div class="search-field">
+                        <label for="tipo">Tipo</label>
+                        <select id="tipo" name="tipo">
+                            <option value="">Selecione</option>
+                            <option value="apartamento">Apartamento</option>
+                            <option value="casa">Casa</option>
+                            <option value="kitnet">Kitnet</option>
+                            <option value="comercial">Comercial</option>
+                        </select>
+                    </div>
+                    <div class="search-field">
+                        <label for="condominio">Condomínio Fechado</label>
+                        <select id="condominio" name="condominio">
+                            <option value="">Indiferente</option>
+                            <option value="sim">Sim</option>
+                            <option value="nao">Não</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="search-row">
+                    <div class="search-field">
+                        <label>Quartos</label>
+                        <div class="filter-options">
+                            <button type="button" class="filter-btn">1</button>
+                            <button type="button" class="filter-btn">2</button>
+                            <button type="button" class="filter-btn">3</button>
+                            <button type="button" class="filter-btn">4+</button>
+                        </div>
+                    </div>
+                    <div class="search-field">
+                        <label>Suítes</label>
+                        <div class="filter-options">
+                            <button type="button" class="filter-btn">1</button>
+                            <button type="button" class="filter-btn">2</button>
+                            <button type="button" class="filter-btn">3</button>
+                            <button type="button" class="filter-btn">4+</button>
+                        </div>
+                    </div>
+                    <div class="search-field">
+                        <label>Banheiros</label>
+                        <div class="filter-options">
+                            <button type="button" class="filter-btn">1</button>
+                            <button type="button" class="filter-btn">2</button>
+                            <button type="button" class="filter-btn">3</button>
+                            <button type="button" class="filter-btn">4+</button>
+                        </div>
+                    </div>
+                    <div class="search-field">
+                        <label>Vagas</label>
+                        <div class="filter-options">
+                            <button type="button" class="filter-btn">1</button>
+                            <button type="button" class="filter-btn">2</button>
+                            <button type="button" class="filter-btn">3</button>
+                            <button type="button" class="filter-btn">4+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="search-row">
+                    <div class="search-field">
+                        <label for="area-min">Área (m²)</label>
+                        <input type="number" id="area-min" name="area-min" placeholder="Mínimo">
+                        <input type="number" id="area-max" name="area-max" placeholder="Máximo">
+                    </div>
+                    <div class="search-field">
+                        <label for="caracteristicas">Características</label>
+                        <input type="text" id="caracteristicas" name="caracteristicas" placeholder="Digite uma característica">
+                        <div class="filter-options">
+                            <label><input type="checkbox" name="churrasqueira"> Churrasqueira</label>
+                            <label><input type="checkbox" name="piscina"> Piscina</label>
+                            <label><input type="checkbox" name="academia"> Academia</label>
+                            <label><input type="checkbox" name="playground"> Playground</label>
+                            <label><input type="checkbox" name="saladejogos"> Sala de Jogos</label>
+                            <label><input type="checkbox" name="jardim"> Jardim</label>
+                            <label><input type="checkbox" name="varanda"> Varanda</label>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="search-btn">Buscar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Property Grid -->
+            <div class="property-section">
+                <h2>Imóveis Disponíveis</h2>
+                <div class="property-grid">
+                    <!-- Property Card 1 -->
+                    <div class="property-card">
+                        <div class="property-image">
+                            <img src="assets/images/imovel1.jpg" alt="Edifício Mirah">
+                        </div>
+                        <div class="property-info">
+                            <h3>Edifício Mirah</h3>
+                            <p>Apartamento no Centro</p>
+                            <p>R$ 12.000/mês | R$ 2.100.000</p>
+                            <p>Condomínio: R$ 1.700 | IPTU: R$ 250/mês</p>
+                            <button class="cta-btn">Detalhes</button>
+                            <button class="cta-btn">Contato</button>
+                        </div>
+                    </div>
+
+                    <!-- Property Card 2 -->
+                    <div class="property-card">
+                        <div class="property-image">
+                            <img src="assets/images/imovel2.jpg" alt="Edifício Crisanga">
+                        </div>
+                        <div class="property-info">
+                            <h3>Edifício Crisanga</h3>
+                            <p>Apartamento Alto Padrão</p>
+                            <p>R$ 12.000/mês | R$ 4.500.000</p>
+                            <p>Condomínio: R$ 2.200</p>
+                            <button class="cta-btn">Detalhes</button>
+                            <button class="cta-btn">Contato</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-section">
+                <h4>Contato</h4>
+                <p>Telefone: (14) 3321-7000</p>
+                <p>WhatsApp: (14) 99105-6611</p>
+                <p>Email: contato@moraesimobiliaria.com.br</p>
+            </div>
+            <div class="footer-section">
+                <h4>Endereço</h4>
+                <p>Rua Principal, 123 - Centro, Bauru - SP</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
