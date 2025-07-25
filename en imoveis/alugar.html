@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -6,7 +7,26 @@
     <title>Imóveis para Alugar - Moraes Imobiliária</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
+
+    <style>
+        @media (max-width: 768px) {
+            .property-card {
+                flex-direction: column !important;
+                height: auto !important;
+            }
+            .property-image {
+                width: 100% !important;
+                height: 200px !important;
+            }
+            .property-image img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    </style>
+    </head>
+    
 <body>
     <!-- Header -->
     <header class="header">
@@ -34,19 +54,22 @@
         </div>
     </header>
 
-    <!-- Search and Filter Section -->
+    <!-- Filtro lateral + resultados -->
     <section class="search-section">
-        <div class="container">
-            <form class="search-form">
-                <div class="search-row">
+        <div class="container" style="display: flex; gap: 30px;">
+            <!-- Filtro lateral -->
+            <aside style="width: 300px;">
+                <form class="search-form" style="display: flex; flex-direction: column; gap: 20px;">
                     <div class="search-field">
-                        <label for="localizacao">Localização</label>
+                        <label for="localizacao">Localidades</label>
                         <input type="text" id="localizacao" name="localizacao" placeholder="Digite região, prédio, bairro">
                     </div>
                     <div class="search-field">
-                        <label for="valor-min">Preço de locação (R$)</label>
-                        <input type="number" id="valor-min" name="valor-min" placeholder="Mínimo">
-                        <input type="number" id="valor-max" name="valor-max" placeholder="Máximo">
+                        <label>Preço de locação (R$)</label>
+                        <div style="display: flex; gap: 10px;">
+                            <input type="number" name="valor-min" placeholder="Mínimo">
+                            <input type="number" name="valor-max" placeholder="Máximo">
+                        </div>
                     </div>
                     <div class="search-field">
                         <label for="tipo">Tipo</label>
@@ -59,117 +82,110 @@
                         </select>
                     </div>
                     <div class="search-field">
-                        <label for="condominio">Condomínio Fechado</label>
+                        <label for="condominio">Em condomínio fechado</label>
                         <select id="condominio" name="condominio">
                             <option value="">Indiferente</option>
                             <option value="sim">Sim</option>
                             <option value="nao">Não</option>
                         </select>
                     </div>
-                </div>
-                <div class="search-row">
                     <div class="search-field">
                         <label>Quartos</label>
                         <div class="filter-options">
-                            <button type="button" class="filter-btn">1</button>
-                            <button type="button" class="filter-btn">2</button>
-                            <button type="button" class="filter-btn">3</button>
+                            <button type="button" class="filter-btn">1+</button>
+                            <button type="button" class="filter-btn">2+</button>
+                            <button type="button" class="filter-btn">3+</button>
                             <button type="button" class="filter-btn">4+</button>
+                            <button type="button" class="filter-btn">5+</button>
                         </div>
                     </div>
                     <div class="search-field">
                         <label>Suítes</label>
                         <div class="filter-options">
-                            <button type="button" class="filter-btn">1</button>
-                            <button type="button" class="filter-btn">2</button>
-                            <button type="button" class="filter-btn">3</button>
+                            <button type="button" class="filter-btn">1+</button>
+                            <button type="button" class="filter-btn">2+</button>
+                            <button type="button" class="filter-btn">3+</button>
                             <button type="button" class="filter-btn">4+</button>
+                            <button type="button" class="filter-btn">5+</button>
                         </div>
                     </div>
                     <div class="search-field">
                         <label>Banheiros</label>
                         <div class="filter-options">
-                            <button type="button" class="filter-btn">1</button>
-                            <button type="button" class="filter-btn">2</button>
-                            <button type="button" class="filter-btn">3</button>
+                            <button type="button" class="filter-btn">1+</button>
+                            <button type="button" class="filter-btn">2+</button>
+                            <button type="button" class="filter-btn">3+</button>
                             <button type="button" class="filter-btn">4+</button>
+                            <button type="button" class="filter-btn">5+</button>
                         </div>
                     </div>
                     <div class="search-field">
                         <label>Vagas</label>
                         <div class="filter-options">
-                            <button type="button" class="filter-btn">1</button>
-                            <button type="button" class="filter-btn">2</button>
-                            <button type="button" class="filter-btn">3</button>
+                            <button type="button" class="filter-btn">1+</button>
+                            <button type="button" class="filter-btn">2+</button>
+                            <button type="button" class="filter-btn">3+</button>
                             <button type="button" class="filter-btn">4+</button>
+                            <button type="button" class="filter-btn">5+</button>
                         </div>
-                    </div>
-                </div>
-                <div class="search-row">
-                    <div class="search-field">
-                        <label for="area-min">Área (m²)</label>
-                        <input type="number" id="area-min" name="area-min" placeholder="Mínimo">
-                        <input type="number" id="area-max" name="area-max" placeholder="Máximo">
                     </div>
                     <div class="search-field">
-                        <label for="caracteristicas">Características</label>
-                        <input type="text" id="caracteristicas" name="caracteristicas" placeholder="Digite uma característica">
-                        <div class="filter-options">
-                            <label><input type="checkbox" name="churrasqueira"> Churrasqueira</label>
-                            <label><input type="checkbox" name="piscina"> Piscina</label>
-                            <label><input type="checkbox" name="academia"> Academia</label>
-                            <label><input type="checkbox" name="playground"> Playground</label>
-                            <label><input type="checkbox" name="saladejogos"> Sala de Jogos</label>
-                            <label><input type="checkbox" name="jardim"> Jardim</label>
-                            <label><input type="checkbox" name="varanda"> Varanda</label>
+                        <label>Área (m²)</label>
+                        <div style="display: flex; gap: 10px;">
+                            <input type="number" name="area-min" placeholder="Mínimo">
+                            <input type="number" name="area-max" placeholder="Máximo">
                         </div>
                     </div>
-                </div>
-                <button type="submit" class="search-btn">Buscar</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Main Content -->
-    <main class="main-content">
-        <div class="container">
-            <!-- Property Grid -->
-            <div class="property-section">
-                <h2>Imóveis Disponíveis</h2>
-                <div class="property-grid">
-                    <!-- Property Card 1 -->
-                    <div class="property-card">
-                        <div class="property-image">
-                            <img src="assets/images/imovel1.jpg" alt="Edifício Mirah">
-                        </div>
-                        <div class="property-info">
-                            <h3>Edifício Mirah</h3>
-                            <p>Apartamento no Centro</p>
-                            <p>R$ 12.000/mês | R$ 2.100.000</p>
-                            <p>Condomínio: R$ 1.700 | IPTU: R$ 250/mês</p>
-                            <button class="cta-btn">Detalhes</button>
-                            <button class="cta-btn">Contato</button>
-                        </div>
+                    <div class="search-field">
+                        <label>Características</label>
+                        <input type="text" name="caracteristicas" placeholder="Busque uma característica">
+                        <label><input type="checkbox" name="churrasqueira"> Churrasqueira</label><br>
+                        <label><input type="checkbox" name="aceita-pet"> Aceita pet</label>
                     </div>
+                    <button type="submit" class="search-btn">Buscar</button>
+                </form>
+            </aside>
 
-                    <!-- Property Card 2 -->
-                    <div class="property-card">
-                        <div class="property-image">
-                            <img src="assets/images/imovel2.jpg" alt="Edifício Crisanga">
+            <!-- Resultados -->
+            <div style="flex: 1;">
+                <div class="property-section">
+                    <h2>Imóveis Disponíveis</h2>
+                    <div class="property-grid" style="display: flex; flex-direction: column; gap: 20px;">
+                        <div class="property-card" style="display: flex; flex-direction: row; height: 200px;">
+                            <div class="property-image" style="flex: 0 0 300px; height: 100%;">
+                                <img src="https://www.geracaoimoveis.com.br/foto_/2022/11178/sao-jose-dos-campos-casa-condominio-condominio-residencial-alphaville-ii-23-05-2024_14-27-13-16.webp" alt="Edifício Mirah" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="property-info" style="flex: 1; padding: 20px;">
+                                <h3>Jardim Panorama</h3>
+                                <p>Salão em Bauru</p>
+                                <p>R$ 8.000/mês | IPTU R$ 700/mês</p>
+                                <p>5 | 200 m²</p>
+                                <div style="margin-top: 10px;">
+                                    <button class="cta-btn">Detalhes</button>
+                                    <button class="cta-btn">Contato</button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="property-info">
-                            <h3>Edifício Crisanga</h3>
-                            <p>Apartamento Alto Padrão</p>
-                            <p>R$ 12.000/mês | R$ 4.500.000</p>
-                            <p>Condomínio: R$ 2.200</p>
-                            <button class="cta-btn">Detalhes</button>
-                            <button class="cta-btn">Contato</button>
+                        <div class="property-card" style="display: flex; flex-direction: row; height: 200px;">
+                            <div class="property-image" style="flex: 0 0 300px; height: 100%;">
+                                <img src="https://www.fabrilar.com.br/img/cmsimage.php/1000x1000/02f0b95cd31637cc842d5c07ac751c7c.webp" alt="Edifício Crisanga" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="property-info" style="flex: 1; padding: 20px;">
+                                <h3>Área Rural</h3>
+                                <p>Chácara em Bauru</p>
+                                <p>R$ 6.000/mês | IPTU incluso</p>
+                                <p>2 banheiro | 4.000 m²</p>
+                                <div style="margin-top: 10px;">
+                                    <button class="cta-btn">Detalhes</button>
+                                    <button class="cta-btn">Contato</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </main>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
