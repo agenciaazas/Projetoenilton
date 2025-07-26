@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imóveis para Alugar - Moraes Imobiliária</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        @media (max-width: 768px) {
+            .property-card {
+                flex-direction: column !important;
+                height: auto !important;
+            }
+            .property-image {
+                width: 100% !important;
+                height: 200px !important;
+            }
+            .property-image img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    </style>
+    </head>
+    
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1><a href="comprar.html">Moraes Imobiliária</a></h1>
+                </div>
+                </nav>
+                <div class="contact-info">
+                    <p>Contato WhatsApp</p>
+                    <div class="phone-numbers">
+                        <span>(14) 3321-7000</span>
+                        <span>(14) 99105-6611</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Navigation -->
+    <nav class="navigation">
+        <div class="container">
+            <ul class="nav-tabs">
+                <li><a href="comprar.html" class="nav-link active">Comprar</a></li>
+                <li><a href="alugar.html" class="nav-link">Alugar</a></li>
+                <li><a href="novos.html" class="nav-link">Novos</a></li>
+                <li><a href="casaemcondominio.html" class="nav-link">Casa em Condomínio</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Filtro lateral + resultados -->
+    <section class="search-section">
+        <div class="container" style="display: flex; gap: 30px;">
+            <!-- Filtro lateral -->
+            <aside style="width: 300px;">
+                <form class="search-form" method="post" action="php/inserir.php" style="display: flex; flex-direction: column; gap: 20px;">
+                    <div class="search-field">
+                        <label for="localizacao">Localidades</label>
+                        <input type="text" id="localizacao" name="localizacao" placeholder="Digite região, prédio, bairro">
+                    </div>
+                    <div class="search-field">
+                        <label>Preço de locação (R$)</label>
+                        <div style="display: flex; gap: 10px;">
+                            <input type="number" name="valor-min" placeholder="Mínimo">
+                            <input type="number" name="valor-max" placeholder="Máximo">
+                        </div>
+                    </div>
+                    <div class="search-field">
+                        <label for="tipo">Tipo</label>
+                        <select id="tipo" name="tipo">
+                            <option value="">Selecione</option>
+                            <option value="apartamento">Apartamento</option>
+                            <option value="casa">Casa</option>
+                            <option value="kitnet">Kitnet</option>
+                            <option value="comercial">Comercial</option>
+                        </select>
+                    </div>
+                    <div class="search-field">
+                        <label for="condominio">Em condomínio fechado</label>
+                        <select id="condominio" name="condominio">
+                            <option value="">Indiferente</option>
+                            <option value="sim">Sim</option>
+                            <option value="nao">Não</option>
+                        </select>
+                    </div>
+                    <div class="search-field">
+                        <label>Quartos</label>
+                        <div class="filter-options">
+                            <button type="button" class="filter-btn">1+</button>
+                            <button type="button" class="filter-btn">2+</button>
+                            <button type="button" class="filter-btn">3+</button>
+                            <button type="button" class="filter-btn">4+</button>
+                            <button type="button" class="filter-btn">5+</button>
+                        </div>
+                    </div>
+                    <div class="search-field">
+                        <label>Suítes</label>
+                        <div class="filter-options">
+                            <button type="button" class="filter-btn">1+</button>
+                            <button type="button" class="filter-btn">2+</button>
+                            <button type="button" class="filter-btn">3+</button>
+                            <button type="button" class="filter-btn">4+</button>
+                            <button type="button" class="filter-btn">5+</button>
+                        </div>
+                    </div>
+                    <div class="search-field">
+                        <label>Banheiros</label>
+                        <div class="filter-options">
+                            <button type="button" class="filter-btn">1+</button>
+                            <button type="button" class="filter-btn">2+</button>
+                            <button type="button" class="filter-btn">3+</button>
+                            <button type="button" class="filter-btn">4+</button>
+                            <button type="button" class="filter-btn">5+</button>
+                        </div>
+                    </div>
+                    <div class="search-field">
+                        <label>Vagas</label>
+                        <div class="filter-options">
+                            <button type="button" class="filter-btn">1+</button>
+                            <button type="button" class="filter-btn">2+</button>
+                            <button type="button" class="filter-btn">3+</button>
+                            <button type="button" class="filter-btn">4+</button>
+                            <button type="button" class="filter-btn">5+</button>
+                        </div>
+                    </div>
+                    <div class="search-field">
+                        <label>Área (m²)</label>
+                        <div style="display: flex; gap: 10px;">
+                            <input type="number" name="area-min" placeholder="Mínimo">
+                            <input type="number" name="area-max" placeholder="Máximo">
+                        </div>
+                    </div>
+                    <div class="search-field">
+                        <label>Características</label>
+                        <input type="text" name="caracteristicas" placeholder="Busque uma característica">
+                        <label><input type="checkbox" name="churrasqueira"> Churrasqueira</label><br>
+                        <label><input type="checkbox" name="aceita-pet"> Aceita pet</label>
+                    </div>
+                    <button type="submit" class="search-btn">Buscar</button>
+                </form>
+            </aside>
+
+            <!-- Resultados -->
+            <div style="flex: 1;">
+                <div class="property-section">
+                    <h2> Novos Imóveis</h2>
+                    <div class="property-grid" style="display: flex; flex-direction: column; gap: 20px;">
+                        <div class="property-card" style="display: flex; flex-direction: row; height: 200px;">
+                            <div class="property-image" style="flex: 0 0 300px; height: 100%;">
+                                <img src="https://www.geracaoimoveis.com.br/foto_/2022/11178/sao-jose-dos-campos-casa-condominio-condominio-residencial-alphaville-ii-23-05-2024_14-27-13-16.webp" alt="Edifício Mirah" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="property-info" style="flex: 1; padding: 20px;">
+                                <h3>Jardim Panorama</h3>
+                                <p>Salão em Bauru</p>
+                                <p>R$ 8.000/mês | IPTU R$ 700/mês</p>
+                                <p>5 | 200 m²</p>
+                                <div style="margin-top: 10px;">
+                                    <button class="cta-btn">Detalhes</button>
+                                    <button class="cta-btn">Contato</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="property-card" style="display: flex; flex-direction: row; height: 200px;">
+                            <div class="property-image" style="flex: 0 0 300px; height: 100%;">
+                                <img src="https://www.fabrilar.com.br/img/cmsimage.php/1000x1000/02f0b95cd31637cc842d5c07ac751c7c.webp" alt="Edifício Crisanga" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="property-info" style="flex: 1; padding: 20px;">
+                                <h3>Área Rural</h3>
+                                <p>Chácara em Bauru</p>
+                                <p>R$ 6.000/mês | IPTU incluso</p>
+                                <p>2 banheiro | 4.000 m²</p>
+                                <div style="margin-top: 10px;">
+                                    <button class="cta-btn" onclick="window.location.href='comprar.html'">Detalhes</button>
+                                    <button class="cta-btn">Contato</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-section">
+                <h4>Contato</h4>
+                <p>Telefone: (14) 3321-7000</p>
+                <p>WhatsApp: (14) 99105-6611</p>
+                <p>Email: contato@moraesimobiliaria.com.br</p>
+            </div>
+            <div class="footer-section">
+                <h4>Endereço</h4>
+                <p>Rua Principal, 123 - Centro, Bauru - SP</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

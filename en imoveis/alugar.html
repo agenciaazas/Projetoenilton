@@ -64,7 +64,7 @@
         <div class="container" style="display: flex; gap: 30px;">
             <!-- Filtro lateral -->
             <aside style="width: 300px;">
-                <form class="search-form" method="post" action="php/inserir.php" style="display: flex; flex-direction: column; gap: 20px;">
+                <form class="search-form" method="post" action="php/buscaralugar.php" style="display: flex; flex-direction: column; gap: 20px;">
                     <div class="search-field">
                         <label for="localizacao">Localidades</label>
                         <input type="text" id="localizacao" name="localizacao" placeholder="Digite região, prédio, bairro">
@@ -181,7 +181,7 @@
                                 <p>R$ 6.000/mês | IPTU incluso</p>
                                 <p>2 banheiro | 4.000 m²</p>
                                 <div style="margin-top: 10px;">
-                                    <button class="cta-btn">Detalhes</button>
+                                    <button class="cta-btn" onclick="window.location.href='comprar.html'">Detalhes</button>
                                     <button class="cta-btn">Contato</button>
                                 </div>
                             </div>
