@@ -24,7 +24,7 @@ $area_max = $_POST['area-max'] ?? '';
 $caracteristicas = $_POST['caracteristicas'] ?? '';
 
 // Monta a consulta SQL
-$sql = "SELECT * FROM properties WHERE tipo_transacao = 'comprar'";
+$sql = "SELECT * FROM properties WHERE tipo_transacao = 'alugar'";
 
 if (!empty($localizacao)) {
     $sql .= " AND localizacao LIKE '%$localizacao%'";
