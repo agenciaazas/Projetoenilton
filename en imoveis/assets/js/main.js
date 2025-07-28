@@ -308,3 +308,4 @@ document.addEventListener('visibilitychange', function() {
         console.log('Page visible');
     }
 });
+
